@@ -1,0 +1,34 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+#aptop{
+    
+    -fx-background-color: #174aa5;
+    
+}
+
+#apleft{
+    
+    -fx-background-color: #125ddf;
+}
+
+#apmain{
+    /*  -fx-background-image: url("../icon/images.png");*/
+    -fx-background-color: #dbdcf5;
+}
+
+#ap{
+    
+    -fx-background-color: #47484c;
+}
+
+.buttonmain{
+    
+    -fx-background-color: #b4c2da;
+}
+

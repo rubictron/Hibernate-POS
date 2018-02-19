@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.rubictron.hiblayer.view.controller.ReportViewController">
+    <stylesheets>
+        <URL value="@/lk/rubictron/hiblayer/view/ui/style/report.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="27.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <LineChart fx:id="lineChart" layoutX="14.0" layoutY="-20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <BarChart fx:id="barChart" layoutX="14.0" prefHeight="309.0" prefWidth="500.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+         </children>
+      </AnchorPane>
+      <ButtonBar layoutX="279.0" layoutY="353.0" prefHeight="26.0" prefWidth="367.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <buttons>
+            <JFXButton fx:id="btnAllOrdersDate" onAction="#abtnAllOrdersDate" text="Max Order Of the Date" />
+            <JFXButton fx:id="btnAllOrdersId" onAction="#abtnAllOrdersId" text="All Orders By ID" />
+         </buttons>
+      </ButtonBar>
+      <JFXButton fx:id="btnItemReport" layoutX="20.0" layoutY="354.0" onAction="#abtnItemReport" text="Item Report" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" />
+   </children>
+</AnchorPane>
